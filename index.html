@@ -1,0 +1,72 @@
+
+<!-- this is a comment -->
+<!-- a comment is a thing that the computer ignores -->
+<!-- a comment is a thing for humans to read -->
+<!-- a comment helps humans understand the code written for computers -->
+<!-- you can read these comments to understand what the different things mean -->
+<!-- OR: just skip to <body> and start editing the peas. -->
+<!-- all the stuff below, until title, is standard things you can pretty much just copy and paste -->
+<!-- without worrying too much about what it means-->
+<!DOCTYPE html> <!-- this tells the computer that the document type is html -->
+<!-- html is the language that web browsers speak -->
+<!-- web browsers (Chrome, Safari, Firefox) read html files (text) and make
+them into fabulous websites with images, videos, etc. -->
+<!-- our code says to the browser: "please interpret all of this stuff according
+to the html standards that we have agreed on globally" -->
+<html lang="en">
+<!-- this "html tag": <html> tells the browser, the html code begins now -->
+<!-- lang="en" tells screen readers that the text on this webpage is in English -->
+<head>
+  <!-- this is the website "header", which includes metadata about the website, such as: -->
+  <meta charset="UTF-8">
+  <!-- charset = "character set", this tells the browser to display all
+  possible characters correctly on the page -->
+  <!-- if not determined, results in gibberish on screen, eg. "hääyö" becomes "hÃ⁠¤Ã⁠¤yÃ⁠¶" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- this tells the browser to adjust the content depending on the size of the "viewport" -->
+  <!-- the viewport is basically the user's screen -->
+  <!-- nowadays people will navigate websites on their phones or computers -->
+  <!-- so it's important to adjust the website content accordingly -->
+  <title>time, diffracted</title>
+  <!-- now the fun begins! -->
+  <!-- whatever you write inside the title tag, ie. between <title></title> -->
+  <!-- will appeare on the tab in your browser!-->
+  <!-- tells the browser to get a font so we can display peas: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- here we link to a CSS "stylesheet", in which we can define fonts, colors, font size, etc. -->
+  <!-- we can also define these things on a need-by-need basis, "inline" in the html code -->
+  <!-- but sometimes, and often, it makes sense to define things for the whole website -->
+  <!-- Below I write some CSS here for my document: -->
+  <style>
+    .noto-color-emoji-regular {
+      font-family: "Noto Color Emoji", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {background-color: rgb(255, 189, 241);}
+    p {font-size: 24px; font-family: "Noto Color Emoji"}
+  </style> <!-- above I set the background color of the body of my page (the
+    entire page, to this light pinkish color. Color, not colour.)-->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- here we define the "favicon", what a strange name -->
+  <!-- this is one of my favorite parts about making a website -->
+  <!-- you create a 32x32 PIXEL or 64x64 PIXEL image (VERY TINY) -->
+  <!-- and then this image is displayed as a tiny icon in the tab, next to the website title -->
+</head>
+<!-- this, backslash before the tag name </>, tells the browser: "end of all
+the metadata things I wanted to tell you" -->
+<body>
+  <!-- here begins the BODY of a website, this is all the CONTENT, the STUFF
+  of the website, the meat and bones. -->
+  <!-- in our case: images and text -->
+  <h1>Check back in July of 2024 for a playable version of <em>Time, diffracted</em>.</h1>
+  <p>>> For now, you can watch a videotraversal of the work here:</p>
+  <iframe width="960" height="540" src="https://www.youtube.com/embed/ADJU-lmp7no?si=-6eBfGsZkrzyMBku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+<!-- again a backslash before the tag name, telling the browser that it's time to close the body, nothing more on this website -->
+</html>
+<!-- and a last backslash, to tell the browser that the html file is now over and out -->
